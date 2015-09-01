@@ -20,7 +20,7 @@ const vel = require('vel')
 
 vel((h, state) => {
   return h('div', {
-    custom-prop: vhook({
+    customProp: vhook({
       hook: (node, prop, prev) => console.log('prev', prev)
       unhook: (node, prop, next) => console.log('prev', next)
     })
